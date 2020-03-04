@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var path = require("path");
+var dotenv = require("dotenv");
+dotenv.config({ path: path.resolve(__dirname, "../../../.env") });
+exports.PUBLIC_URL = process.env.PUBLIC_URL;
+exports.BIND_PORT = Number(process.env.BIND_PORT);
+exports.ES_HOST = process.env.ES_HOST;
+exports.ES_PORT = process.env.ES_PORT;
+exports.ES_PREFIX = process.env.ES_PREFIX;
+exports.RESOURCE_PROTOCOL = process.env.RESOURCE_PROTOCOL;
+exports.RESOURCE_HOST = process.env.RESOURCE_HOST;
+exports.RESOURCE_URL = exports.RESOURCE_PROTOCOL + "://" + exports.RESOURCE_HOST;

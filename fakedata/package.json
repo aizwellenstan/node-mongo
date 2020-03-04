@@ -1,0 +1,21 @@
+{
+  "name": "request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start index.js --name fakedata",
+    "restart": "pm2 restart fakedata",
+    "watch": "node index",
+    "createHis": "node createHis",
+    "createAttr": "node createAttribute",
+    "createAlarm": "node createAlarm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "request": "*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
